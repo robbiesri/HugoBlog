@@ -18,6 +18,7 @@ footnoteReturnLinkContents = "^"
 [taxonomies]
     cooking-style = "cooking-styles"
     graphics-area = "graphics-areas"
+    misc-topic = "misc-topics"
 
 [[menu.icon]]
     name = "github"
