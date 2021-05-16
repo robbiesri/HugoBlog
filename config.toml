@@ -1,6 +1,6 @@
 baseURL = "http://robbiesri.github.io"
 languageCode = "en-us"
-title = "Graphics y Cooking"
+title = "Render Chef"
 theme = "erblog"
 
 footnoteReturnLinkContents = "^"

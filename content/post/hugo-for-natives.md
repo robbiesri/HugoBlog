@@ -5,21 +5,21 @@ misc-topics: ["webdev"]
 draft: false
 ---
 
-# tl;dr
+## tl;dr
 
 1. Create an empty [GitHub Pages repo][gh-pages] e.g.
 `robbiesri/robbiesri.github.io` to contain the static generated site.
 1. Create an empty git repo to hold the backing Hugo infrastructure
-	* This can be also hosted on GitHub 😃
+    - This can be also hosted on GitHub 😃
 1. Install Hugo
 1. Use Hugo to initialize a new site, pick a theme, and build some content
-	* Peep the [Hugo Quick Start guide][hugo-quick-start]
+    - Peep the [Hugo Quick Start guide][hugo-quick-start]
 1. Initialize the GitHub Pages repo as a submodule in the `./public` folder
 1. Use Hugo to build the static site (`> hugo`), which deploys to `./public` by default!
 1. Commit and push from your GitHub Pages submodule
 1. Go to your cool new GitHub Pages blog (robbiesri.github.io), and make it rain 💰
 
-# Context
+## Context
 
 I'd been thinking about setting up a graphics/rendering blog for a minute now,
 but I didn't really know what the path was going to be. I was vaguely aware of
@@ -39,12 +39,12 @@ most of the boxes, along with being fast (at least, advertised as fast) and
 well-liked on GitHub. I did try to do some due diligence about other static site
 generators, but that seemed like boondoggle, so I settled on Hugo.
 
-# Hugo Setup
+## Hugo Setup
 
 Setting up Hugo was pretty damn easy, and the
 [Quick Start guide][hugo-quick-start] is plenty good to get setup quick.
 
-## Install
+### Install
 
 If you're on Linux/Mac, you can probably just use your preferred package manager
 to grab Hugo. If you're like me, on Windows, you can grab a binary drop on the
@@ -52,13 +52,15 @@ to grab Hugo. If you're like me, on Windows, you can grab a binary drop on the
 the `hugo` binary is easily accessible, probably by adding it to your `PATH`
 environment variable.
 
-## Test Site
+### Test Site
+
 If you go through the official Quick Start, it's pretty simple to create a test
 site, add a theme, and load up a local server to browse your site. Hugo is as
 fast as advertised! Once you start the server, it's actually really simple to
 modify your posts and see them get _instantly_ updated on the rendered page!
 
-## Themes
+### Themes
+
 Picking a theme is both fun and stressful, especially when everything is brand
 spanking new! The [Hugo Themes][hugo-themes] listing is fun to navigate, and
 each theme landing page was useful info, a sample site, and repo.
@@ -70,19 +72,19 @@ I ended up choosing [erblog][erblog-theme] because the test site was appealing,
 and the README seemed decent.  While I've had a couple hiccups during setup,
 I've been satisfied with the experience so far!
 
-# GitHub Pages Setup
+## GitHub Pages Setup
 
 Once you're comfortable with your test site, you can start the process for
 setting up the actual site! You will need two Git repos:
 
-* GitHub Pages repo - `github.com/\<USERNAME\>/\<USERNAME\>.github.io`
-	* You need to create an (empty) repo at the above URL. This has to be on GitHub.
-	* e.g. https://github.com/robbiesri/robbiesri.github.io
-* Hugo site container repo
-	* This will contain the Hugo site contents that source the static site, along
-	   with the theme and GitHub Pages repo as submodules.
-	* This doesn't _have_ to be on GitHub but I did
-	   [host mine on GitHub][rs-gh-hugo] because why not?
+- GitHub Pages repo - `github.com/\<USERNAME\>/\<USERNAME\>.github.io`
+  - You need to create an (empty) repo at the above URL. This has to be on GitHub.
+  - e.g. [https://github.com/robbiesri/robbiesri.github.io](rs-gh-io)
+- Hugo site container repo
+  - This will contain the Hugo site contents that source the static site, along
+  with the theme and GitHub Pages repo as submodules.
+  - This doesn't _have_ to be on GitHub but I did
+  [host mine on GitHub][rs-gh-hugo] because why not?
 
 You should create your site container repo, add your theme as a submodule, and
 add your GitHub Pages repo as a submodule as well! There is a _trick_ with the
@@ -91,7 +93,7 @@ that's the default folder that Hugo will generate the static site into. You can
 actually choose the folder name, but I just used the default (as suggested by
 the [Hugo GitHub deployment guide][hugo-gh-deploy].
 
-```
+```shell
 > git clone https://github.com/robbiesri/HugoBlog
 > hugo new site HugoBlog [--force] 
 > cd ./HugoBlog
@@ -104,15 +106,15 @@ the [Hugo GitHub deployment guide][hugo-gh-deploy].
 
 Now you can work on creating content you'd like to be on  your site! You can
 see how your page will look by using `hugo server`, and pointing your browser to
-http://localhost:1313.
+[http://localhost:1313](http://localhost:1313).
 
-# Deploying the Site
+## Deploying the Site
 
 Once you are ready to push your site to GitHub pages, it's pretty easy! If you
 added posts, make sure you update the post meta-data to set their `draft` status
 to `false`.
 
-```
+```shell
 > cd ~./HugoBlog
 > hugo
 > cd ./public
@@ -124,9 +126,9 @@ to `false`.
 Then surf over to your GitHub page (e.g. robbiesri.github.io) and enjoy the
 fruits of your virtual labor (and GitHub and Hugo and your theme).
 
-# Workflows
+## Workflows
 
-## Drafts
+### Drafts
 
 To be honest, I didn't understand _what_ the draft functionality was for.
 Either the page was deployed, or it wasn't. As long as I didn't update the
@@ -134,7 +136,8 @@ static deployment, I was safe. However, I quickly took advantage of drafting
 some posts without worrying about accidentally rolling them out to the public
 site (though anyone can check out my open-source Hugo repo 😉).
 
-## GitHub Pages Deployment Branch
+### GitHub Pages Deployment Branch
+
 According to the [GitHub Pages publishing doc][gh-pages-publish-doc], I'm
 supposed to be able to _choose_ what branch my site is published from. However,
 when I looked at the actual Settings for my repo...that wasn't the case!
@@ -145,7 +148,7 @@ I don't mind being fixed to `master` for publishing, but I wish the docs matched
 the actual behavior. I was confused when I tried changing the branch (since I
 don't use `master` as the default branch if I can help it).
 
-## Deployment Activity Log
+### Deployment Activity Log
 
 When I was trying to figure out if my site was actually deployed, I found that
 there was an [activity log][robbiesri-io-activity] that GitHub provides:
@@ -155,9 +158,9 @@ there was an [activity log][robbiesri-io-activity] that GitHub provides:
 With this, I was able to see which commit the current deployment was grabbing.
 This helped me verify and understand if my site was working as expected.
 
-# Pending Stuff
+## Pending Stuff
 
-## Markdown Editor
+### Markdown Editor
 
 One of the benefits of Google was a really nice internal Markdown editor in the
 web-based IDE, Cider. It provided instant visualization of the Markdown I was
@@ -178,7 +181,7 @@ didn't really work. I also found an interesting
 [Markdown formatting extension][markdown-formatter]. I think I'll stick with VS
 Code for now.
 
-## Hugo Theme/Config Management
+### Hugo Theme/Config Management
 
 You gotta pay the cost to be the boss, but I was slightly annoyed with the time
 it took for me to figure out how to manage `config.toml` and the per-post

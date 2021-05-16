@@ -5,7 +5,7 @@ misc-topics: ["webdev"]
 draft: false
 ---
 
-# tl;dr
+## tl;dr
 
 1. Add the [utterances GitHub app][utterances-app] to your GitHub Pages repo
     * `utterances` uses GitHub Issues to manage the comments, so it needs
@@ -23,7 +23,7 @@ theme submodule, since you'll be modifying theme files directly.
     * If you are keeping the Hugo repo local, no need, since you don't need to
     push your theme changes anywhere.
 
-# Choosing a Comment System for Hugo
+## Choosing a Comment System for Hugo
 
 I wanted to add comments, even though I anticipated most of the discussion
 for the blog posts would be on Twitter. I also thought it would be interesting
@@ -40,7 +40,8 @@ convert the existing comments to another format. If I had self-hosting, I could
 probably write a script to convert the old comment format. But...whatever. This
 is good enough for me.
 
-I had settled on a couple systems to check out, though there are plenty: 
+I had settled on a couple systems to check out, though there are plenty:
+
 * [gitalk][gitalk]
 * [utterances][utterances-repo]
 
@@ -53,13 +54,13 @@ Note: I was surprised that there weren't (m)any comparison articles about
 picking comment systems for statically generated blogs. Maybe there's more in
 the `jekyll` ecosystem, but I just didn't find anything really useful.
 
-# Supporting `utterances`
+## Supporting `utterances`
 
 It was actually really simple to add `utterances` to the blog. It boiled down
 to a few simple steps:
 
 1. Authorize the [utterances GitHub app][utterances-app] on my blog repo
-    * I added it to https://github.com/robbiesri/robbiesri.github.io
+    * I added it to [https://github.com/robbiesri/robbiesri.github.io](blog)
 1. Generate the script blob from the [utterances home page][utterances-home]
 1. Look at my theme documentation to determine where to add the script blob
     * [ertuil/erblog][erblog-hooks] has a specific page for add hooks
@@ -90,7 +91,7 @@ themes would look like.
 Also, the `utterances` comment blob shows up in the local server
 (`> hugo server -D`), which was a pleasant surprise!
 
-# Bonus: Forking the Theme
+## Bonus: Forking the Theme
 
 Because I decided to host the backing Hugo store in a
 [GitHub repo][backing-hugo], I ran into a little snag: modifying the theme
@@ -116,3 +117,4 @@ on their repo 😛
 [erblog-hooks]: https://github.com/ertuil/erblog/blob/master/README.md#4-user-defined-html-hooks
 
 [backing-hugo]: https://github.com/robbiesri/HugoBlog
+[blog]: https://github.com/robbiesri/robbiesri.github.io

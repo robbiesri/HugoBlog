@@ -39,7 +39,7 @@ Topics of interest:
 I **LOVE** to cook, along with peripheral home cooking activities, such as
 cooking shows, cooking blogs, cook books, and cooking/chef Instagram.
 
-A brief list of my favorite food styles to cook: 
+A brief list of my favorite food styles to cook:
 
 * American South - True Southern ingredients can be hard to get in the Bay Area,
 but I've gotten decent at figuring out good substitutes. Gumbo, etoufee,
