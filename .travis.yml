@@ -3,6 +3,7 @@ dist: bionic
 
 install:
   - sudo pip install proselint
+  - npm install -g markdownlint-cli
 
 script: 
-  - ./proselint-check.sh
+  - ./lint-check.sh

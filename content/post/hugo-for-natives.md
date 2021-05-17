@@ -17,7 +17,8 @@ draft: false
 1. Initialize the GitHub Pages repo as a submodule in the `./public` folder
 1. Use Hugo to build the static site (`> hugo`), which deploys to `./public` by default
 1. Commit and push from your GitHub Pages submodule
-1. Go to your cool new GitHub Pages blog (robbiesri.github.io), and make it rain 💰
+1. Go to your cool new GitHub Pages blog (robbiesri.github.io), and make it rain
+💰
 
 ## Context
 
@@ -171,7 +172,7 @@ share).
 I don't have that out in the wild. That I know of, at least. I have snooped
 around for alternatives. I drafted this post in [StackEdit][stackedit], and it
 was pretty fun. However, it doesn't really offer any formatting support.
-And if you are using locally hosted images, it doesn't work with an online 
+And if you are using locally hosted images, it doesn't work with an online
 editor.
 
 I usually write local Markdown in VS Code, and the built-in visualizer

@@ -29,7 +29,9 @@ I wanted to add comments, even though I anticipated most of the discussion
 for the blog posts would be on Twitter. I also thought it would be interesting
 to learn about the different systems, and integration process.
 
-I didn't really want to use a comment system where I didn't somehow _own_ the comments, which excluded services like Disqus. There's other drama associated with Disqus, so I was happy to skip it.
+I didn't really want to use a comment system where I didn't somehow _own_ the
+comments, which excluded services like Disqus. There's other drama associated
+with Disqus, so I was happy to skip it.
 
 That left with me either self-hosting or a system that used
 [GitHub Issues][gh-issues] to manage the comments. I didn't really feel like
