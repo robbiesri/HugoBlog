@@ -16,8 +16,8 @@ that will add comments to your blog posts.
 `utterances` script blob.
 1. Regenerate the static site (`> hugo`), and push the modified post contents.
     * You can test them locally with (`> hugo server`) to see how the embedded
-    comments look!
-1. Reload your blog posts, and enjoy your new commenting system!
+    comments look
+1. Reload your blog posts, and enjoy your new commenting system
 1. If you are hosting your backing Hugo repo on GitHub, you'll need to fork the
 theme submodule, since you'll be modifying theme files directly.
     * If you are keeping the Hugo repo local, no need, since you don't need to
@@ -37,8 +37,8 @@ setting up my own webserver, so I settled on a GitHub Issues system.
 Technically, I still don't _own_ the comments because GitHub owns the issues.
 Plus, if I want to change the comment system, it'll probably be way harder to
 convert the existing comments to another format. If I had self-hosting, I could
-probably write a script to convert the old comment format. But...whatever. This
-is good enough for me.
+probably write a script to convert the old comment format. But, this is good
+enough for me.
 
 I had settled on a couple systems to check out, though there are plenty:
 
@@ -64,7 +64,7 @@ to a few simple steps:
 1. Generate the script blob from the [utterances home page][utterances-home]
 1. Look at my theme documentation to determine where to add the script blob
     * [ertuil/erblog][erblog-hooks] has a specific page for add hooks
-1. Generate and push the static site, with comments added to posts!
+1. Generate and push the static site, with comments added to posts
 
 Really the only 'tricky' part was figuring out where to add the script blob,
 along with experimenting with the visual appearance of the comment interface. I
@@ -95,7 +95,7 @@ Also, the `utterances` comment blob shows up in the local server
 
 Because I decided to host the backing Hugo store in a
 [GitHub repo][backing-hugo], I ran into a little snag: modifying the theme
-contents! In order to keep everything in sync remotely, I'd have to fork the
+contents. In order to keep everything in sync remotely, I'd have to fork the
 theme.
 
 This wasn't a huge deal, but then I got to modify other parts of the theme,

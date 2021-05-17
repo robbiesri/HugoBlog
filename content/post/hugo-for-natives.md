@@ -15,16 +15,16 @@ draft: false
 1. Use Hugo to initialize a new site, pick a theme, and build some content
     - Peep the [Hugo Quick Start guide][hugo-quick-start]
 1. Initialize the GitHub Pages repo as a submodule in the `./public` folder
-1. Use Hugo to build the static site (`> hugo`), which deploys to `./public` by default!
+1. Use Hugo to build the static site (`> hugo`), which deploys to `./public` by default
 1. Commit and push from your GitHub Pages submodule
 1. Go to your cool new GitHub Pages blog (robbiesri.github.io), and make it rain 💰
 
 ## Context
 
-I'd been thinking about setting up a graphics/rendering blog for a minute now,
+I'd been thinking about setting up a graphics/rendering blog for a minute now
 but I didn't really know what the path was going to be. I was vaguely aware of
 [GitHub Pages][gh-pages], but hadn't spent anytime investigating what it would
-take to get it up and running. The biggest issue for me is that...I have no
+take to get it up and running. The biggest issue for me is that I have no
 experience with webdev, as a native C/C++ programmer.
 
 One day, I was looking at the big homie [MJP's blog][mjp-blog] when I realized
@@ -56,26 +56,26 @@ environment variable.
 
 If you go through the official Quick Start, it's pretty simple to create a test
 site, add a theme, and load up a local server to browse your site. Hugo is as
-fast as advertised! Once you start the server, it's actually really simple to
-modify your posts and see them get _instantly_ updated on the rendered page!
+fast as advertised. Once you start the server, it's actually really simple to
+modify your posts and see them get _instantly_ updated on the rendered page.
 
 ### Themes
 
 Picking a theme is both fun and stressful, especially when everything is brand
-spanking new! The [Hugo Themes][hugo-themes] listing is fun to navigate, and
+spanking new. The [Hugo Themes][hugo-themes] listing is fun to navigate, and
 each theme landing page was useful info, a sample site, and repo.
 
 Once you pick a theme, make sure you snoop around the theme's README to figure
-out what you need to know when setting up your theme!
+out what you need to know when setting up your theme.
 
 I ended up choosing [erblog][erblog-theme] because the test site was appealing,
-and the README seemed decent.  While I've had a couple hiccups during setup,
-I've been satisfied with the experience so far!
+and the README seemed decent. While I've had a couple hiccups during setup,
+I've been satisfied with the experience so far.
 
 ## GitHub Pages Setup
 
 Once you're comfortable with your test site, you can start the process for
-setting up the actual site! You will need two Git repos:
+setting up the actual site. You will need two Git repos:
 
 - GitHub Pages repo - `github.com/\<USERNAME\>/\<USERNAME\>.github.io`
   - You need to create an (empty) repo at the above URL. This has to be on GitHub.
@@ -87,7 +87,7 @@ setting up the actual site! You will need two Git repos:
   [host mine on GitHub][rs-gh-hugo] because why not?
 
 You should create your site container repo, add your theme as a submodule, and
-add your GitHub Pages repo as a submodule as well! There is a _trick_ with the
+add your GitHub Pages repo as a submodule as well. There is a _trick_ with the
 Pages submodule: you want to clone it into a folder called `public` because
 that's the default folder that Hugo will generate the static site into. You can
 actually choose the folder name, but I just used the default (as suggested by
@@ -104,13 +104,13 @@ the [Hugo GitHub deployment guide][hugo-gh-deploy].
 > git submodule add https://github.com/robbiesri/robbiesri.github.io public
 ```
 
-Now you can work on creating content you'd like to be on  your site! You can
+Now you can work on creating content you'd like to be on  your site. You can
 see how your page will look by using `hugo server`, and pointing your browser to
 [http://localhost:1313](http://localhost:1313).
 
 ## Deploying the Site
 
-Once you are ready to push your site to GitHub pages, it's pretty easy! If you
+Once you are ready to push your site to GitHub pages, it's pretty easy. If you
 added posts, make sure you update the post meta-data to set their `draft` status
 to `false`.
 
@@ -140,7 +140,7 @@ site (though anyone can check out my open-source Hugo repo 😉).
 
 According to the [GitHub Pages publishing doc][gh-pages-publish-doc], I'm
 supposed to be able to _choose_ what branch my site is published from. However,
-when I looked at the actual Settings for my repo...that wasn't the case!
+when I looked at the actual Settings for my repo, that wasn't the case.
 
 ![Settings pic from my repo](/post_content/misc/gh_pages_branch.PNG)
 
@@ -168,11 +168,11 @@ writing, a really great integrated Markdown formatter (like `.clang-format` for
 Markdown), and an easy full render of the generated site (that was also easy to
 share).
 
-I...don't have that out in the wild! That I know of, at least... I have snooped
-around for alternatives. I drafted this very post in [StackEdit][stackedit],
-and it was pretty fun! However, it doesn't really offer any formatting support.
-And if you are using locally hosted images, well...it doesn't work with an
-online editor.
+I don't have that out in the wild. That I know of, at least. I have snooped
+around for alternatives. I drafted this post in [StackEdit][stackedit], and it
+was pretty fun. However, it doesn't really offer any formatting support.
+And if you are using locally hosted images, it doesn't work with an online 
+editor.
 
 I usually write local Markdown in VS Code, and the built-in visualizer
 (`Ctrl-Shift-v`) is pretty great. But I don't like toggling between tabs. There

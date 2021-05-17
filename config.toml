@@ -39,3 +39,9 @@ footnoteReturnLinkContents = "^"
     name = "instagram"
     url = "https://www.instagram.com/dj_robbies/"
     weight = 1
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10

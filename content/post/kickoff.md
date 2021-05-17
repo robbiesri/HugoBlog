@@ -41,7 +41,7 @@ cooking shows, cooking blogs, cook books, and cooking/chef Instagram.
 
 A brief list of my favorite food styles to cook:
 
-* American South - True Southern ingredients can be hard to get in the Bay Area,
+* American South - True Southern ingredients can be hard to get in the Bay Area
 but I've gotten decent at figuring out good substitutes. Gumbo, etoufee,
 jambalaya, po' boys, and of course, red beans and rice; they're all so fun to
 cook and eat.
@@ -58,8 +58,8 @@ I like to cook some of the classics from Western Indian restaurants, and some
 dishes from my paternal heritage (South Indian) based on some of the recipes
 I've been able to extract from my aunties.
 
-* Thai - Very recently, I've started to explore cooking Thai food. A couple
-North American restaurants ([Jitlada][jitlada], [Pai][pai], [Pok Pok][pok-pok])
+* Thai - Recently, I've started to explore cooking Thai food. A couple North
+American restaurants ([Jitlada][jitlada], [Pai][pai], [Pok Pok][pok-pok])
 have really ignited my imagination about what Thai cooking represents. I just
 made some homemade [Sai Ua][sai-ua] that _blew me away_. I'm ready to add this
 to my repertoire!

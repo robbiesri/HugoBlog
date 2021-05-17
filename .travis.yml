@@ -1,0 +1,8 @@
+language: python
+dist: bionic
+
+install:
+  - sudo pip install proselint
+
+script: 
+  - ./proselint-check.sh
