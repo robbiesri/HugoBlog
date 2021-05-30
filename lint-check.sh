@@ -27,3 +27,11 @@ for f in ./content/post/*.md;  do
     echo "Running markdownlint..."; 
     markdownlint ${f};
 done;
+
+for f in ./content/post/gfx/*.md;  do 
+    echo "Checking ${f}"; 
+    echo "Running proselint..."; 
+    proselint ${f}; 
+    echo "Running markdownlint..."; 
+    markdownlint ${f};
+done;

@@ -8,12 +8,14 @@ draft: false
 
 It's a blog, with graphics and food.
 
+I currently work at Epic Games as a senior programmer.
+
 ## Acknowledgements
 
-* [proselint](https://github.com/amperser/proselint/) - Tooling to verify
-  stylistic aspects of prose.
 * [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) - NPM
   CLI tool to run `markdownlint` on Markdown files.
+* [proselint](https://github.com/amperser/proselint/) - Tooling to verify
+  stylistic aspects of prose.
 * [https://github.com/richelbilderbeek](https://github.com/richelbilderbeek) -
   Richel Bilderbeek has crazy amount of resources to help you get bootstrapped
   with Travis CI. I was able to use his

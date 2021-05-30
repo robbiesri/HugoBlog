@@ -17,7 +17,7 @@ footnoteReturnLinkContents = "^"
 
 [taxonomies]
     cooking-style = "cooking-styles"
-    graphics-area = "graphics-areas"
+    graphics-areas = "graphics-areas"
     misc-topic = "misc-topics"
 
 [[menu.icon]]
