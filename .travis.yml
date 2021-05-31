@@ -5,7 +5,7 @@ python:
   - "3.9"
 
 install:
-  - pip3 install git+https://github.com/amperser/proselint.git@ae2161b
+  - pip3 install git+https://github.com/amperser/proselint.git@ae2161b5cf0a521819eba48206aafdff32522862
   - npm install -g markdownlint-cli
 
 script: 
