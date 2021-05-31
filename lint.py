@@ -4,6 +4,7 @@ from pathlib import Path
 
 import click
 import proselint
+import subprocess
 
 # Borrowed from proselint.command_line
 def print_errors(filename, errors, compact=False):
@@ -32,6 +33,8 @@ def main():
         f = click.open_file(path, 'r', encoding="utf-8", errors="replace")
         errors = proselint.tools.lint(f, False, Path('.proselintrc'))
         print_errors(str(path), errors)
+
+    # TODO Use subprocess to run markdownlint, and capture output?
 
 if __name__ == '__main__':
     main()

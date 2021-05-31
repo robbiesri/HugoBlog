@@ -10,3 +10,4 @@ install:
 
 script: 
   - python lint.py
+  - chmod u+x ./lint-check.sh
