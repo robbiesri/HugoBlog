@@ -315,8 +315,7 @@ for (const auto &queueRequest : queueRequestList) {
 
 Now that we finally have our queue requests, we can plug that into our device
 request. There's a couple other important aspects to device creation, which
-include layers, extensions and features. We won't cover them right now, but they
-are each a pain in the ass.
+include layers, extensions and features (which I won't cover).
 
 ```cpp
 VkPhysicalDeviceFeatures2 features2 = {};
@@ -364,12 +363,12 @@ I know IHVs were actively evolving their capabilities, but maybe they could have
 had feature levels for the queues as well.
 
 Vulkan is frustrating because of how _enormous_ the input structure is. It's
-very easy to make a mistake in your device creation request, and validation
-isn't guaranteed to catch something that you didn't intend. It's also
-annoying that you have to specify the queues up front, only to request them
-later on. Why not just use the D3D12 model in that case? Why not just "enable"
-all queues by default? Why do I need to know the specific index in the queue
-family? When do I ever need to know that information after fetching the queue?
+easy to make a mistake in your device creation request, and validation isn't
+guaranteed to catch something that you didn't intend. It's also annoying that
+you have to specify the queues up front, only to request them later on. Why not
+just use the D3D12 model in that case? Why not just "enable" all queues by
+default? Why do I need to know the specific index in the queue family? When do
+I ever need to know that information after fetching the queue?
 
 ## Window + Swapchain
 
@@ -562,7 +561,6 @@ implementation supports. This includes size and format.
   std::vector<VkSurfaceFormat2KHR> surfaceFormats;
     surfaceCaps.sType = VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_KHR;
 
-    // TODO @robbiesri: Support legacy surface caps path?
     VkPhysicalDeviceSurfaceInfo2KHR surfaceInfo = {};
     surfaceInfo.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SURFACE_INFO_2_KHR;
     surfaceInfo.surface = m_surface;
