@@ -1,9 +1,12 @@
-language: python
 dist: bionic
 
+language: python
+python:
+  - "3.9"
+
 install:
-  - sudo pip install proselint
+  - sudo pip install git+https://github.com/amperser/proselint.git@ae2161b
   - npm install -g markdownlint-cli
 
 script: 
-  - ./lint-check.sh
+  - python lint.py
